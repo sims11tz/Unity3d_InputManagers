@@ -1,0 +1,49 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="StuffContainer" style="flex-grow: 1; width: 100%; height: 100%;">
+        <engine:VisualElement name="BG" style="flex-grow: 1; position: absolute; top: 0; left: 0; bottom: 0; right: 0; -unity-background-image-tint-color: rgba(182, 196, 255, 0.6); background-color: rgba(158, 166, 255, 0.33);" />
+        <engine:VisualElement name="header" style="flex-direction: row; -unity-text-align: upper-center; align-items: center;">
+            <engine:Label text="&gt; hello friend" name="Hello" style="-unity-font-style: bold; font-size: 45px; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-bottom: 4px; align-self: center; align-items: center;" />
+            <engine:Button text="Joystick Names" name="JoystickNamesBtn" focusable="false" style="align-self: flex-start; -unity-font-style: bold; font-size: 25px; margin-top: 14px;" />
+            <engine:Button text="Old Input" name="InputOld" focusable="false" style="align-self: flex-start; -unity-font-style: bold; font-size: 25px; margin-top: 14px;" />
+            <engine:Button text="New Input" name="InputNew" focusable="false" style="align-self: flex-start; -unity-font-style: bold; font-size: 25px; margin-top: 14px;" />
+            <engine:Button text="Quit" name="QuitBtn" focusable="false" style="align-self: flex-start; -unity-font-style: bold; font-size: 25px; margin-top: 14px;" />
+            <engine:Button text="Clear" name="ClearBtn" focusable="false" style="align-self: flex-start; -unity-font-style: bold; font-size: 25px; margin-top: 14px;" />
+            <engine:Label text="fps" name="fps" style="-unity-font-style: bold; font-size: 24px; flex-grow: 1;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="Stuff" style="flex-grow: 1; flex-direction: row;">
+            <engine:VisualElement name="LeftStuff" style="flex-grow: 1; width: 35%;">
+                <engine:VisualElement style="flex-grow: 0; flex-direction: row;">
+                    <engine:Label text="AnyButton" name="AnyButtonLabel" enable-rich-text="false" style="align-self: center; margin-right: 16px; margin-left: 16px; -unity-font-style: bold;" />
+                    <engine:Label text="Controller Type" name="ControllerType" style="-unity-font-style: bold; font-size: 18px; align-self: center;" />
+                </engine:VisualElement>
+                <engine:Label name="actionLog" style="-unity-font-style: bold; flex-grow: 1; white-space: normal; height: 90%;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="RightStuff" style="flex-grow: 1;">
+                <engine:Button text="Toggle Stuff" name="ToggleStuffBtn" focusable="false" style="font-size: 18px; -unity-font-style: bold;" />
+                <engine:VisualElement name="Stuff2" style="flex-grow: 1; display: none;">
+                    <engine:Label text="LeftStickX" name="LeftStickX" style="-unity-font-style: bold; font-size: 25px;" />
+                    <engine:Label text="LeftStickY" name="LeftStickY" style="-unity-font-style: bold; font-size: 25px;" />
+                    <engine:Label text="RightStickX" name="RightStickX" style="-unity-font-style: bold; font-size: 25px;" />
+                    <engine:Label text="RightStickY" name="RightStickY" style="-unity-font-style: bold; font-size: 25px;" />
+                    <engine:Label text="Horizontal" name="Horizontal" style="-unity-font-style: bold; font-size: 25px;" />
+                    <engine:Label text="Vertical" name="Vertical" style="-unity-font-style: bold; font-size: 25px;" />
+                </engine:VisualElement>
+                <engine:VisualElement name="Stuff1" style="flex-grow: 1; justify-content: space-evenly; display: flex;">
+                    <engine:Label text="IsPaused" name="IsPaused" style="-unity-font-style: bold; font-size: 25px;" />
+                    <engine:Label text="IsGamePad" name="IsGamePad" style="-unity-font-style: bold; font-size: 25px;" />
+                    <engine:Label text="ThurstDelta" name="ThrustDelta" style="-unity-font-style: bold; font-size: 25px;" />
+                    <engine:Label text="SteeringDelta" name="SteeringDelta" style="-unity-font-style: bold; font-size: 25px;" />
+                    <engine:Label text="AbsoluteControlVector" name="AbsoluteControlVector" style="font-size: 25px; -unity-font-style: bold;" />
+                    <engine:Label text="AbsoluteControlAngle" name="AbsoluteControlAngle" style="-unity-font-style: bold; font-size: 25px;" />
+                    <engine:Label text="BoostDelta" name="BoostDelta" style="-unity-font-style: bold; font-size: 25px;" />
+                    <engine:Label text="BoostActiveControl" name="BoostActiveControl" style="-unity-font-style: bold; font-size: 25px;" />
+                    <engine:Label text="Handbrake" name="Handbrake" style="-unity-font-style: bold; font-size: 25px;" />
+                    <engine:Label text="WeaponAimDir" name="WeaponAimDir" style="font-size: 25px; -unity-font-style: bold;" />
+                    <engine:Label text="WeaponAutoAim" name="WeaponAutoAim" style="font-size: 25px; -unity-font-style: bold;" />
+                    <engine:Label text="IsTryingToFire" name="IsTryingToFire" style="-unity-font-style: bold; font-size: 25px;" />
+                    <engine:Label text="IsSpecialActionPressed" name="IsSpecialActionPressed" style="font-size: 25px; -unity-font-style: bold;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
